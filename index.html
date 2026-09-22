@@ -1,158 +1,143 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oriz Nexus | Smart Rurality & Eco-Brutalist Stewardship</title>
-    <style>
-        /* CSS Integrado para facilidade no GitHub Pages */
-        :root {
-            --bg-color: #ECEAE4; /* Tom de betão claro/calcário */
-            --text-main: #2C3525; /* Verde floresta escuro */
-            --accent-wood: #8A7B66; /* Madeira envelhecida */
-            --void-bg: #1A1F16; /* Fundo escuro contemplativo */
-        }
-
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        header {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            background: linear-gradient(rgba(236, 234, 228, 0.8), rgba(236, 234, 228, 0.9)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-        }
-
-        h1 {
-            font-size: 4rem;
-            letter-spacing: -2px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            font-weight: 300;
-            letter-spacing: 2px;
-            color: var(--accent-wood);
-            text-transform: uppercase;
-        }
-
-        .location {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 100px 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .manifesto {
-            font-size: 1.5rem;
-            font-weight: 300;
-            text-align: justify;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 60px;
-        }
-
-        .node-card {
-            background-color: #fff;
-            padding: 40px;
-            border-top: 4px solid var(--accent-wood);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        .node-card h3 {
-            margin-top: 0;
-            font-size: 1.5rem;
-            color: var(--text-main);
-        }
-
-        .void-section {
-            background-color: var(--void-bg);
-            color: var(--bg-color);
-            text-align: center;
-            padding: 120px 20px;
-            margin-top: 60px;
-        }
-
-        .void-section h2 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: var(--accent-wood);
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.8rem;
-            color: var(--accent-wood);
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="ORIZ NEXUS — a mountain retreat in Northern Portugal, rooted in quiet, landscape and valley stewardship." />
+  <meta name="theme-color" content="#14251d" />
+  <title>ORIZ NEXUS — Mountain Retreat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="ORIZ NEXUS home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 42 42" fill="none"><path d="M5 31C13 30 16 22 20 13c3 8 6 13 17 18"/><path d="M9 31c7-2 10-6 12-11 3 5 6 9 12 11"/></svg>
+      </span>
+      <span>ORIZ NEXUS</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#place" data-en="The place" data-pt="O lugar">The place</a>
+      <a href="#stewardship" data-en="Stewardship" data-pt="Stewardship">Stewardship</a>
+      <a href="#rhythm" data-en="The rhythm" data-pt="O ritmo">The rhythm</a>
+    </nav>
+    <button class="lang-toggle" type="button" aria-label="Change language" data-lang="en">PT</button>
+  </header>
 
-    <header>
-        <!-- Título e conceito base[cite: 1] -->
-        <h1>Oriz Nexus</h1>
-        <div class="subtitle">Smart Rurality & Eco-Brutalist Stewardship</div>
-        <div class="location">Santa Marinha Oriz, Vila Verde, Portugal</div>
-    </header>
-
-    <section>
-        <!-- Enquadramento e visão[cite: 1] -->
-        <p class="manifesto">
-            Um laboratório vivo de inovação territorial que articula habitação, hospitalidade, contemplação e custódia ecológica num sistema híbrido e regenerativo. A intenção não é urbanizar a montanha, mas qualificá-la. Betão e madeira como materiais, tecnologia como ferramenta e a natureza como finalidade.
-        </p>
-
-        <div class="grid">
-            <!-- Nexus 01[cite: 1] -->
-            <div class="node-card">
-                <h3>Nexus 01 | The Sanctum</h3>
-                <p>O centro operativo. Núcleo habitacional e de gestão que serve de âncora à comunidade, garantindo a presença e identidade do projeto.</p>
-            </div>
-            
-            <!-- Nexus 02[cite: 1] -->
-            <div class="node-card">
-                <h3>Nexus 02 | The Nomad Cells</h3>
-                <p>Jornada de produtividade profunda para o nómada digital. Unidades compactas de alta performance, desenhadas para imersão, foco e luz natural.</p>
-            </div>
-
-            <!-- Nexus 03[cite: 1] -->
-            <div class="node-card">
-                <h3>Nexus 03 | The Eco-Pods</h3>
-                <p>A jornada do bem-estar. Unidades independentes focadas na lentidão, conforto e no silêncio, ideais para retiros e desconexão sensorial.</p>
-            </div>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-en="Vila Verde · Northern Portugal" data-pt="Vila Verde · Norte de Portugal">Vila Verde · Northern Portugal</p>
+        <h1 data-en="Come back to what is essential." data-pt="Voltar ao que é essencial.">Come back to what is essential.</h1>
+        <p class="hero-copy" data-en="A mountain retreat shaped by the valley — a place for stillness, movement, seasons and a deeper relationship with the land." data-pt="Um refúgio de montanha moldado pelo vale — um lugar para o silêncio, o movimento, as estações e uma relação mais profunda com a terra.">A mountain retreat shaped by the valley — a place for stillness, movement, seasons and a deeper relationship with the land.</p>
+        <a class="text-link" href="#place"><span data-en="Discover the valley" data-pt="Descobrir o vale">Discover the valley</span><span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="scroll-note" aria-hidden="true">SCROLL</div>
     </section>
 
-    <!-- Nexus 04[cite: 1] -->
-    <div class="void-section">
-        <h2>Nexus 04 | The Void</h2>
-        <p>Um espaço de suspensão. O pavilhão de meditação desenhado como um vazio programático para o enquadramento paisagístico e a contemplação sobre o vale.</p>
-    </div>
+    <section class="intro section" id="place">
+      <div class="section-index">01</div>
+      <div class="intro-grid">
+        <p class="kicker" data-en="A place, not a product" data-pt="Um lugar, não um produto">A place, not a product</p>
+        <div>
+          <h2 data-en="The valley leads. Everything else follows." data-pt="O vale guia. Tudo o resto vem depois.">The valley leads. Everything else follows.</h2>
+          <p class="lead" data-en="ORIZ NEXUS is being imagined from the landscape outward: mountain air, running water, stone, woodland, cultivated ground and long views across the Minho. The ambition is simple — to create a rare place to stay without overwhelming the character that makes the valley worth coming to." data-pt="O ORIZ NEXUS está a ser imaginado a partir da paisagem: ar de montanha, água corrente, pedra, floresta, terra cultivada e vistas longas sobre o Minho. A ambição é simples — criar um lugar raro para ficar, sem sobrepor-se ao carácter que torna este vale digno de ser descoberto.">ORIZ NEXUS is being imagined from the landscape outward: mountain air, running water, stone, woodland, cultivated ground and long views across the Minho. The ambition is simple — to create a rare place to stay without overwhelming the character that makes the valley worth coming to.</p>
+        </div>
+      </div>
 
-    <footer>
-        <p>&copy; 2026 Oriz Nexus. Preservação, Tecnologia e Natureza.</p>
-    </footer>
+      <div class="image-pair">
+        <figure class="portrait-img reveal">
+          <img src="https://images.unsplash.com/photo-1707836930217-52dd220d735e?auto=format&fit=crop&fm=jpg&q=85&w=1800" alt="Misty forest path in Portugal" loading="lazy" />
+          <figcaption data-en="Forest, moisture, shade — the valley has its own pace." data-pt="Floresta, humidade, sombra — o vale tem o seu próprio ritmo.">Forest, moisture, shade — the valley has its own pace.</figcaption>
+        </figure>
+        <figure class="landscape-img reveal">
+          <img src="https://images.unsplash.com/photo-1739890037504-773a73612b8b?auto=format&fit=crop&fm=jpg&q=85&w=2200" alt="Mountain village in Portugal" loading="lazy" />
+          <figcaption data-en="A northern landscape of mountain, settlement and cultivated land." data-pt="Uma paisagem do Norte feita de montanha, povoamento e terra cultivada.">A northern landscape of mountain, settlement and cultivated land.</figcaption>
+        </figure>
+      </div>
+    </section>
 
+    <section class="quote-section">
+      <p class="eyebrow" data-en="The idea" data-pt="A ideia">The idea</p>
+      <blockquote data-en="Less escape. More return." data-pt="Menos fuga. Mais regresso.">Less escape. More return.</blockquote>
+      <p data-en="To sleep deeply. Walk far. Eat locally. Read slowly. Hear weather arrive. Leave with more attention than you came with." data-pt="Dormir profundamente. Caminhar longe. Comer local. Ler devagar. Ouvir o tempo a chegar. Partir com mais atenção do que quando se chegou.">To sleep deeply. Walk far. Eat locally. Read slowly. Hear weather arrive. Leave with more attention than you came with.</p>
+    </section>
+
+    <section class="stewardship section dark" id="stewardship">
+      <div class="section-index">02</div>
+      <div class="stewardship-head">
+        <p class="kicker" data-en="Valley stewardship" data-pt="Stewardship do vale">Valley stewardship</p>
+        <h2 data-en="Hospitality should leave the landscape stronger." data-pt="A hospitalidade deve deixar a paisagem mais forte.">Hospitality should leave the landscape stronger.</h2>
+      </div>
+
+      <div class="principles">
+        <article>
+          <span>01</span>
+          <h3 data-en="Restore" data-pt="Restaurar">Restore</h3>
+          <p data-en="Support native woodland, healthier soils and the natural movement of water across the land." data-pt="Apoiar a floresta autóctone, solos mais saudáveis e o movimento natural da água no território.">Support native woodland, healthier soils and the natural movement of water across the land.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3 data-en="Tread lightly" data-pt="Intervir com leveza">Tread lightly</h3>
+          <p data-en="Build with restraint, preserving views, darkness, silence and the small-scale texture of the valley." data-pt="Construir com contenção, preservando vistas, escuridão, silêncio e a escala íntima do vale.">Build with restraint, preserving views, darkness, silence and the small-scale texture of the valley.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3 data-en="Keep value local" data-pt="Criar valor local">Keep value local</h3>
+          <p data-en="Work with local growers, makers, craftspeople and knowledge wherever the place allows it." data-pt="Trabalhar com produtores, artesãos e conhecimento local sempre que o lugar o permita.">Work with local growers, makers, craftspeople and knowledge wherever the place allows it.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3 data-en="Observe over time" data-pt="Observar ao longo do tempo">Observe over time</h3>
+          <p data-en="Treat biodiversity, water, soil and landscape quality as things to notice, understand and improve season after season." data-pt="Tratar biodiversidade, água, solo e qualidade da paisagem como dimensões a observar, compreender e melhorar estação após estação.">Treat biodiversity, water, soil and landscape quality as things to notice, understand and improve season after season.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="full-image" aria-label="Valley landscape">
+      <img src="https://images.unsplash.com/photo-1713819092880-1022067892c5?auto=format&fit=crop&fm=jpg&q=85&w=2400" alt="Portuguese mountain valley landscape" loading="lazy" />
+      <div class="image-overlay-copy">
+        <p class="eyebrow" data-en="Northern Portugal" data-pt="Norte de Portugal">Northern Portugal</p>
+        <p data-en="Mountain weather. Long horizons. A landscape that changes by the hour." data-pt="Tempo de montanha. Horizontes longos. Uma paisagem que muda de hora a hora.">Mountain weather. Long horizons. A landscape that changes by the hour.</p>
+      </div>
+    </section>
+
+    <section class="rhythm section" id="rhythm">
+      <div class="section-index">03</div>
+      <div class="rhythm-intro">
+        <p class="kicker" data-en="The rhythm" data-pt="O ritmo">The rhythm</p>
+        <h2 data-en="Days organised by light, weather and appetite." data-pt="Dias organizados pela luz, pelo tempo e pelo apetite.">Days organised by light, weather and appetite.</h2>
+      </div>
+      <div class="rhythm-list">
+        <div class="rhythm-row"><span>06:42</span><strong data-en="First light" data-pt="Primeira luz">First light</strong><p data-en="Coffee outside. Mist lifting from the slope." data-pt="Café lá fora. A névoa a levantar-se da encosta.">Coffee outside. Mist lifting from the slope.</p></div>
+        <div class="rhythm-row"><span>09:10</span><strong data-en="Move" data-pt="Mover">Move</strong><p data-en="Trail, bike, swim, stretch — or nowhere at all." data-pt="Trilho, bicicleta, água, alongar — ou simplesmente ficar.">Trail, bike, swim, stretch — or nowhere at all.</p></div>
+        <div class="rhythm-row"><span>13:05</span><strong data-en="Gather" data-pt="Reunir">Gather</strong><p data-en="A long table. Seasonal food. No rush." data-pt="Uma mesa longa. Comida da estação. Sem pressa.">A long table. Seasonal food. No rush.</p></div>
+        <div class="rhythm-row"><span>17:38</span><strong data-en="Drift" data-pt="Deambular">Drift</strong><p data-en="Read, wander, sleep, listen to rain." data-pt="Ler, passear, dormir, ouvir a chuva.">Read, wander, sleep, listen to rain.</p></div>
+        <div class="rhythm-row"><span>21:17</span><strong data-en="Darkness" data-pt="Escuridão">Darkness</strong><p data-en="Firelight, stars, quiet conversation." data-pt="Luz do fogo, estrelas, conversa baixa.">Firelight, stars, quiet conversation.</p></div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-card reveal">
+        <p class="eyebrow" data-en="A place in the making" data-pt="Um lugar em construção">A place in the making</p>
+        <h2 data-en="ORIZ NEXUS is taking shape in a valley in the Minho." data-pt="O ORIZ NEXUS está a ganhar forma num vale do Minho.">ORIZ NEXUS is taking shape in a valley in the Minho.</h2>
+        <p data-en="This is an early glimpse of the place and the principles behind it. More will be revealed as the landscape, architecture and seasons come together." data-pt="Este é um primeiro vislumbre do lugar e dos princípios que o orientam. Mais será revelado à medida que paisagem, arquitetura e estações se forem encontrando.">This is an early glimpse of the place and the principles behind it. More will be revealed as the landscape, architecture and seasons come together.</p>
+        <a class="button" href="#top"><span data-en="Return to the valley" data-pt="Voltar ao vale">Return to the valley</span><span>↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span>ORIZ NEXUS</span></div>
+    <p data-en="Mountain hospitality · Valley stewardship · Minho, Portugal" data-pt="Hospitalidade de montanha · Stewardship do vale · Minho, Portugal">Mountain hospitality · Valley stewardship · Minho, Portugal</p>
+    <p>© <span id="year"></span> ORIZ NEXUS</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
